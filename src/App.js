@@ -7,19 +7,19 @@ class App extends Component {
     data: [
       {
         _id: 1,
-        image: "http://lorempixel.com/400/200",
+        image: "",
         title: "Title 1",
         caption: "Caption 1"
       },
       {
         _id: 2,
-        image: "http://lorempixel.com/400/200",
+        image: "",
         title: "Title 2",
         caption: "Caption 2"
       },
       {
         _id: 3,
-        image: "http://lorempixel.com/400/200",
+        image: "",
         title: "Title 2",
         caption: "Caption 2"
       }
