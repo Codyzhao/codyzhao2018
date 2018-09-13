@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Projects from "./components/projects";
+import Header from "./partials/header";
+import Footer from "./partials/footer";
 import "./App.css";
 
 class App extends Component {
@@ -30,7 +32,9 @@ class App extends Component {
     const { data } = this.state;
     return (
       <div className="App">
+        <Header />
         <Projects data={data} />
+        <Footer />
       </div>
     );
   }

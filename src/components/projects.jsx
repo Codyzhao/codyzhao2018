@@ -6,12 +6,14 @@ class Projects extends Component {
     const { data } = this.props;
     return (
       <div className="projects">
-        <div className="row">
-          {data.map(project => (
-            <figure key={project._id} className="project col-md-3">
-              <Project data={project} />
-            </figure>
-          ))}
+        <div className="container">
+          <div className="row">
+            {data.map(project => (
+              <figure key={project._id} className="project col-md-4">
+                <Project data={project} />
+              </figure>
+            ))}
+          </div>
         </div>
       </div>
     );
