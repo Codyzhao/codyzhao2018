@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Projects from "./components/projects";
 import Header from "./partials/header";
+import About from "./components/about";
 import Footer from "./partials/footer";
 import "./App.css";
 
@@ -22,8 +23,8 @@ class App extends Component {
       {
         _id: 3,
         image: "",
-        title: "Title 2",
-        caption: "Caption 2"
+        title: "Title 3",
+        caption: "Caption 3"
       }
     ]
   };
@@ -34,6 +35,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Projects data={data} />
+        <About />
         <Footer />
       </div>
     );

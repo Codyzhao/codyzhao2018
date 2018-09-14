@@ -6,7 +6,7 @@ class Project extends Component {
     return (
       <React.Fragment>
         <img src={project.image} alt="" className="image-fluid" />
-        <h1>{project.title}</h1>
+        <h3>{project.title}</h3>
         <p>{project.caption}</p>
       </React.Fragment>
     );
