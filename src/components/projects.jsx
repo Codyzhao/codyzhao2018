@@ -14,7 +14,6 @@ class Projects extends Component {
     return (
       <div className="projects">
         <div className="container">
-          <h2 className="text-center">My work</h2>
           <Masonry
             className="row project-gallery" // default ''
             elementType={"div"} // default 'div'

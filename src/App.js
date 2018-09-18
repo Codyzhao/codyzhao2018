@@ -3,38 +3,49 @@ import Projects from "./components/projects";
 import Header from "./partials/header";
 import About from "./components/about";
 import Footer from "./partials/footer";
+import Filter from "./components/filter";
+import * as projectService from "./services/projects.service";
+import * as tagsService from "./services/tags.service";
+import { filterByTag } from "./utils/processData";
 import "./App.css";
+
+const filterAll = { _id: "0", name: "All" };
 
 class App extends Component {
   state = {
-    data: [
-      {
-        _id: 1,
-        image: "",
-        title: "Title 1",
-        caption: "Caption 1"
-      },
-      {
-        _id: 2,
-        image: "",
-        title: "Title 2",
-        caption: "Caption 2"
-      },
-      {
-        _id: 3,
-        image: "",
-        title: "Title 3",
-        caption: "Caption 3"
-      }
-    ]
+    data: [],
+    tags: [],
+    selectFilter: filterAll
   };
 
+  componentDidMount() {
+    const tags = [filterAll, ...tagsService.tags];
+    this.setState({
+      data: projectService.getProjects(),
+      tags: tags
+    });
+  }
+
+  handleFilterSelect = filter => this.setState({ selectFilter: filter });
+
   render() {
-    const { data } = this.state;
+    const { data, tags, selectFilter } = this.state;
+
+    const projects =
+      selectFilter && selectFilter._id !== 0
+        ? filterByTag(data, selectFilter)
+        : data;
+
     return (
       <div className="App">
         <Header />
-        <Projects data={data} />
+        <h2 className="text-center">My work</h2>
+        <Filter
+          data={tags}
+          onItemSelect={this.handleFilterSelect}
+          selectItem={selectFilter}
+        />
+        <Projects data={projects} />
         <About />
         <Footer />
       </div>
