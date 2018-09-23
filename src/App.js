@@ -20,8 +20,9 @@ class App extends Component {
 
   componentDidMount() {
     const tags = [filterAll, ...tagsService.tags];
+    const movies = projectService.getProjects();
     this.setState({
-      data: projectService.getProjects(),
+      data: movies,
       tags: tags
     });
   }
@@ -32,7 +33,7 @@ class App extends Component {
     const { data, tags, selectFilter } = this.state;
 
     const projects =
-      selectFilter && selectFilter._id !== 0
+      selectFilter && selectFilter._id !== "0"
         ? filterByTag(data, selectFilter)
         : data;
 
