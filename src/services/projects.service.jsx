@@ -6,42 +6,48 @@ const projects = [
     image: "",
     title: "Title 1",
     caption: "Caption 1",
-    tags: [{ _id: "1", name: "React" }]
+    tags: [{ _id: "1", name: "React" }],
+    column: "6"
   },
   {
     _id: 2,
     image: "",
     title: "Title 2",
     caption: "Caption 2",
-    tags: [{ _id: "2", name: "Angular" }, { _id: "3", name: "Symfony" }]
+    tags: [{ _id: "2", name: "Angular" }, { _id: "3", name: "Symfony" }],
+    column: "3"
   },
   {
     _id: 3,
     image: "",
     title: "Title 3",
     caption: "Caption 3",
-    tags: [{ _id: "4", name: "AEM" }]
+    tags: [{ _id: "4", name: "AEM" }],
+    column: "3"
   },
   {
     _id: 4,
     image: "",
     title: "Title 4",
     caption: "Caption 4",
-    tags: [{ _id: "5", name: "Drupal" }]
+    tags: [{ _id: "5", name: "Drupal" }],
+    column: "4"
   },
   {
     _id: 5,
     image: "",
     title: "Title 5",
     caption: "Caption 5",
-    tags: [{ _id: "3", name: "Symfony" }]
+    tags: [{ _id: "3", name: "Symfony" }],
+    column: "4"
   },
   {
     _id: 6,
     image: "",
     title: "Title 6",
     caption: "Caption 6",
-    tags: [{ _id: "1", name: "React" }, { _id: "3", name: "Symfony" }]
+    tags: [{ _id: "1", name: "React" }, { _id: "3", name: "Symfony" }],
+    column: "4"
   }
 ];
 

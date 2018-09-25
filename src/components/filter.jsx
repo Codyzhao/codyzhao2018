@@ -4,7 +4,7 @@ const Filter = props => {
   const { data, valueProperty, nameProperty, onItemSelect, selectItem } = props;
 
   return (
-    <ul className="filter">
+    <ul className="filter text-center">
       {data.map(filter => (
         <li
           onClick={() => onItemSelect(filter)}

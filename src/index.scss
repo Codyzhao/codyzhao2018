@@ -1,5 +1,11 @@
 // Vendor
 @import "./scss/bootstrap";
 
-//Components
+// Commons
+@import "./scss/common/layout";
+@import "./scss/common/header";
+@import "./scss/common/footer";
+
+// Components
 @import "./scss/components/filter";
+@import "./scss/components/dot";

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Projects from "./components/projects";
 import Header from "./partials/header";
-import About from "./components/about";
 import Footer from "./partials/footer";
 import Filter from "./components/filter";
 import * as projectService from "./services/projects.service";
@@ -38,18 +37,18 @@ class App extends Component {
         : data;
 
     return (
-      <div className="App">
+      <React.Fragment>
         <Header />
-        <h2 className="text-center">My work</h2>
-        <Filter
-          data={tags}
-          onItemSelect={this.handleFilterSelect}
-          selectItem={selectFilter}
-        />
-        <Projects data={projects} />
-        <About />
+        <div id="site-main" className="site-main py-4">
+          <Filter
+            data={tags}
+            onItemSelect={this.handleFilterSelect}
+            selectItem={selectFilter}
+          />
+          <Projects data={projects} />
+        </div>
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }

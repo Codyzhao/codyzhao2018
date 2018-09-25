@@ -1,0 +1,31 @@
+$dotSize: 12px;
+
+.dot {
+  width: $dotSize;
+  height: $dotSize;
+  border-radius: 50%;
+  background: $primary;
+  display: block;
+  margin: $line-height-base * 1rem auto;
+  position: relative;
+}
+
+.dot-3 {
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: $dotSize;
+    height: $dotSize;
+    border-radius: 50%;
+    background: $primary;
+    display: block;
+  }
+  &:before {
+    left: -$dotSize * 1.5;
+  }
+  &:after {
+    right: -$dotSize * 1.5;
+  }
+}

@@ -5,9 +5,9 @@ class Project extends Component {
     const { data: project } = this.props;
     return (
       <React.Fragment>
-        <img src={project.image} alt="" className="image-fluid" />
-        <h3>{project.title}</h3>
-        <p>{project.caption}</p>
+        <img src={project.image} alt="" className="card-img-top" />
+        <h3 className="card-title">{project.title}</h3>
+        <p className="dard-text">{project.caption}</p>
       </React.Fragment>
     );
   }
