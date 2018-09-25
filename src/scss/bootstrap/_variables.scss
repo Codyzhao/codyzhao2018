@@ -277,7 +277,7 @@ $h6-font-size: $font-size-base !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family: $font-family-monospace !default;
-$headings-font-weight: 500 !default;
+$headings-font-weight: bold !default;
 $headings-line-height: 1.5 !default;
 $headings-color: inherit !default;
 
@@ -759,7 +759,7 @@ $card-inner-border-radius: calc(
   #{$card-border-radius} - #{$card-border-width}
 ) !default;
 $card-cap-bg: rgba($black, 0.03) !default;
-$card-bg: transparent !default;
+$card-bg: rgba($white, 0.15) !default;
 
 $card-img-overlay-padding: 1.25rem !default;
 
@@ -767,8 +767,8 @@ $card-group-margin: ($grid-gutter-width / 2) !default;
 $card-deck-margin: $card-group-margin !default;
 
 $card-columns-count: 3 !default;
-$card-columns-gap: 1.25rem !default;
-$card-columns-margin: $card-spacer-y !default;
+$card-columns-gap: 0.9375rem !default;
+$card-columns-margin: 0.9375rem !default;
 
 // Tooltips
 

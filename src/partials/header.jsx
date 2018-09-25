@@ -7,7 +7,7 @@ class Header extends Component {
         <div className="container py-4">
           <div className="dot dot-3 mb-5" />
           <div className="text-center">
-            <h1 className="display-4 mb-5">
+            <h1 className="display-4 mb-3 mb-md-4">
               Hello I’m Cody.
               <br /> A frontend developer.
             </h1>
@@ -54,9 +54,9 @@ class Header extends Component {
                       rel="noopener noreferrer"
                     >
                       Angular
-                    </a>{" "}
-                    framework. They are both very mature MVC framework, but
-                    personally I like React better.
+                    </a>
+                    . They are both very mature MVC framework, but personally I
+                    like React better.
                   </p>
                   <p>
                     React has better component isolation, easy to learn and
