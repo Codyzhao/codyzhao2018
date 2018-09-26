@@ -40,6 +40,7 @@ class App extends Component {
       <React.Fragment>
         <Header />
         <div id="site-main" className="site-main py-4">
+          <h1 className="text-center mb-4">Recent work</h1>
           <Filter
             data={tags}
             onItemSelect={this.handleFilterSelect}

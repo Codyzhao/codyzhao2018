@@ -750,7 +750,7 @@ $jumbotron-bg: $gray-200 !default;
 
 // Cards
 
-$card-spacer-y: 0.75rem !default;
+$card-spacer-y: 0.5rem !default;
 $card-spacer-x: 1.25rem !default;
 $card-border-width: 0 !default;
 $card-border-radius: 0 !default;
@@ -817,7 +817,7 @@ $badge-font-size: 75% !default;
 $badge-font-weight: $font-weight-bold !default;
 $badge-padding-y: 0.25em !default;
 $badge-padding-x: 0.4em !default;
-$badge-border-radius: $border-radius !default;
+$badge-border-radius: 0 !default;
 
 $badge-pill-padding-x: 0.6em !default;
 // Use a higher than normal value to ensure completely rounded edges when

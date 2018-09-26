@@ -4,7 +4,7 @@ export const tags = [
   { _id: "3", name: "jQuery" },
   { _id: "4", name: "Symfony" },
   { _id: "5", name: "AEM" },
-  { _id: "6", name: "Drupal" }
+  { _id: "6", name: "Shopify" }
 ];
 
 export function getTags() {
