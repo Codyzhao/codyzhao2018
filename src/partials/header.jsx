@@ -15,7 +15,7 @@ class Header extends Component {
           <div className="row">
             <div className="col-md-10 offset-md-1">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-8 offset-md-2">
                   <p>
                     This site is a{" "}
                     <a
@@ -54,8 +54,6 @@ class Header extends Component {
                     responsive, HTML/CSS over Javascript approach. It has
                     flexbox based grid and loads of helpful utilites classes.
                   </p>
-                </div>
-                <div className="col-md-6">
                   <p>
                     Started working with Javascript from the jQuery era.
                     Currently I'm working with both{" "}
@@ -76,15 +74,14 @@ class Header extends Component {
                     >
                       Angular
                     </a>
-                    . They are both very mature MVC framework. Personally I like
-                    React better.
+                    . They are both very mature MVC framework.
                   </p>
-                  <p>
+                  {/* <p>
                     React has better component isolation, easy to understand and
                     maintain. It also has better performance thanks to the
                     visual DOM. Not to mention React is way better in term of
                     mirgation.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

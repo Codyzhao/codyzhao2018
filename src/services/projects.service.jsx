@@ -48,6 +48,15 @@ const projects = [
   },
   {
     _id: 6,
+    image: "",
+    title: "React Calender demo",
+    caption:
+      "This is my calendar sandbox app. It is built with React and Bootstrap 4. Let me know if you interested in downloading a codebase copy to play with.",
+    tags: ["1"],
+    url: "http://codyzhao.me/demo/calendar"
+  },
+  {
+    _id: 7,
     image: "/projects/yealands.jpg",
     title: "Yealands Family Wines",
     caption:
@@ -56,7 +65,7 @@ const projects = [
     url: "https://www.yealands.co.nz/"
   },
   {
-    _id: 7,
+    _id: 8,
     image: "/projects/viaduct.jpg",
     title: "Viaduct Harbour",
     caption:
@@ -65,7 +74,7 @@ const projects = [
     url: "https://www.viaduct.co.nz/"
   },
   {
-    _id: 8,
+    _id: 9,
     image: "/projects/kapiti.jpg",
     title: "Taste Kapiti",
     caption:
@@ -74,7 +83,7 @@ const projects = [
     url: "https://www.tastekapiti.co.nz/"
   },
   {
-    _id: 9,
+    _id: 10,
     image: "/projects/mainland.jpg",
     title: "Mainland",
     caption:
@@ -83,7 +92,7 @@ const projects = [
     url: "https://mainland.co.nz/"
   },
   {
-    _id: 10,
+    _id: 11,
     image: "/projects/fanta.jpg",
     title: "Fanta - Shake Things Up",
     caption:
