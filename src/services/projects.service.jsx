@@ -75,6 +75,15 @@ const projects = [
   },
   {
     _id: 9,
+    image: "",
+    title: "React Bus park demo",
+    caption:
+      "This is a simple React cyber bus parking app built with React and Bootstrap 4. Let me know if you interested in downloading a codebase copy to play with.",
+    tags: ["1"],
+    url: "http://codyzhao.me/demo/parkabus"
+  },
+  {
+    _id: 10,
     image: "/projects/kapiti.jpg",
     title: "Taste Kapiti",
     caption:
@@ -83,7 +92,7 @@ const projects = [
     url: "https://www.tastekapiti.co.nz/"
   },
   {
-    _id: 10,
+    _id: 11,
     image: "/projects/mainland.jpg",
     title: "Mainland",
     caption:
@@ -92,7 +101,7 @@ const projects = [
     url: "https://mainland.co.nz/"
   },
   {
-    _id: 11,
+    _id: 12,
     image: "/projects/fanta.jpg",
     title: "Fanta - Shake Things Up",
     caption:
